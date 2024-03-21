@@ -53,4 +53,9 @@ public class TicketService implements ITicketService {
     public Ticket insertTicket(Ticket ticket) {
         return ticketRepository.insertTicket(ticket);
     }
+
+    @Override
+    public Ticket getTicketById(int ticketId) {
+        return ticketRepository.getTicketById(ticketId);
+    }
 }
