@@ -30,5 +30,7 @@ public class TicketRepository {
         }
     }
 
-
+    public Ticket getTicketById(int ticketId) {
+        return map.get(ticketId);
+    }
 }
